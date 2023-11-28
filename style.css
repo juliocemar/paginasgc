@@ -1,0 +1,87 @@
+/* Estilos para el encabezado */
+header {
+  background-color: rgb(11, 32, 109);
+  color: #fff; /* Simplificamos el color del texto */
+  padding: 0.5rem 1rem;
+}
+
+/* Estilos para los encabezados h1 a h6 y clases .h1 a .h6 */
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+}
+
+/* Estilos para h6 y .h6 */
+h6, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000; /* Simplificamos el color del texto */
+}
+
+/* Estilos para el contenido principal */
+#contenido {
+  background-color: #ddd;
+  float: left;
+  height: 500px;
+  padding: 10px;
+  width: 700px;
+  /* Agregamos un margen para separar el contenido de otros elementos */
+  margin: 20px;
+  border-radius: 5px; /* Agregamos bordes redondeados */
+}
+
+/* Estilos para el menú */
+#menu {
+  background-color: #efe6e6;
+  border-radius: 5px;
+ text-align: center;
+  height: 500px;
+  padding: 20px;
+  width: 200px;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #f00, #00f);
+  border-image-slice: 1;
+  /* Agregamos un margen para separar el menú de otros elementos */
+  margin: 20px;
+}
+
+/* Estilos para el menú principal */
+#menupri {
+  background-color: #ff0000;
+  float: left;
+  height: 500px;
+  padding: 20px;
+  width: 400px;
+  /* Agregamos un margen para separar el menú principal de otros elementos */
+  margin: 20px;
+  border-radius: 5px; /* Agregamos bordes redondeados */
+}
+
+/* Estilos para la ventana modal */
+.ventana {
+  background: rgb(167, 167, 170);
+  width: 870px;
+  height: 500px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  min-height: 250px;
+  border-radius: 22px;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  display: none;
+}
+
+/* Estilos para el botón de cerrar la ventana modal */
+#cerrar {
+  position: absolute;
+  right: 3px;
+  top: 1px;
+  cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+  color: #fff; /* Cambiamos el color del botón al mismo que el texto del encabezado */
+}

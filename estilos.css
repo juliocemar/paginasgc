@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	}
+
+
+	body {
+		background: url(img/e.jpg);
+		background-repeat: no-repeat;
+		background-position: center top; /* Ajusta la posición vertical */
+		background-size: 110%;
+	}
+	
+	
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+		background-color: rgb(11, 32, 109);
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu {
+		float: left;
+		line-height: 100px;
+		margin-right: 20px; /* Ajusta este valor para cambiar la separación horizontal */
+	}
+	
+	.logo {
+		float: left;
+		line-height: 100px;
+		margin-top: 20px; /* Ajusta este valor para cambiar la separación desde la parte superior */
+	}
+	
+	
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	
+	.container .menu {
+		float: right;
+		text-align: center;
+		line-height: 35px;
+		margin-top: 10px; /* Ajusta este valor según sea necesario */
+	}
+	
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: rgb(11, 32, 109);
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #dfd8d8;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+
+
+
+	/* Estilos para el nuevo menú en el medio */
+/* Estilos para el nuevo menú en el medio */
+.middle-menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #404040; /* Color plomo */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex; /* Para permitir que el menú esté al lado izquierdo */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+}
+
+.middle-menu nav {
+    margin-left: 20px; /* Espacio entre el menú y el contenido */
+}
+
+.middle-menu nav a {
+    display: block;
+    text-decoration: none;
+    color: #c7c7c7;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.middle-menu nav a:hover {
+    color: #fff;
+}
+
+/* Estilos para el nuevo contenedor centrado */
+/* Estilos para el nuevo contenedor centrado con contenido alineado a la izquierda */
+.centro-menu {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 130px; /* Ajusta la separación desde la parte superior según sea necesario */
+}
+
+#contenido {
+    background: #aea8a8; /* Fondo color plomo para el contenido */
+    color: #0000ff; /* Texto color azul */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Estilos para la ventana modal */
+.venta {
+	background: rgb(179, 179, 207);
+	width: 670px;
+	height: 570px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 10px;
+	min-height: 250px;
+	border-radius: 22px;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	display: none;
+  }
+
+  .ventana {
+	background: rgb(167, 167, 170);
+	width: 870px;
+	height: 500px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 10px;
+	min-height: 250px;
+	border-radius: 22px;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	display: none;
+  }
+  
+  
+  /* Estilos para el botón de cerrar la ventana modal */
+  #cerrar {
+	position: absolute;
+	right: 3px;
+	top: 1px;
+	cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+	color: #fff; /* Cambiamos el color del botón al mismo que el texto del encabezado */
+  }
+
+
+
+.menu h1 {
+    color: #ffffff; /* Color del texto (puedes ajustar según tus preferencias) */
+}
+
+/* Si deseas centrar verticalmente el h1 dentro de .menu, puedes agregar la siguiente regla */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ajusta la altura según sea necesario */
+}
+
+
+
+
+
+
